@@ -1,6 +1,6 @@
+import {Link} from "react-router-dom"
 
-
-document.title = "MONsoon | Weather Updates";
+document.title = "MONsoon";
 export default function Home(){
   return(
     <div className="container-fluid">
@@ -11,7 +11,7 @@ export default function Home(){
                     <div className="col-md-6 col-12 main_header_left">
                         <p>Welcome to weather app</p>
                         <h1>Get the Latest <span className="text-color">Weather</span> Updates of your City</h1>
-                        <a href="/Weather"><button>Check now</button></a>
+                        <Link to="/weather"><button>Check now</button></Link>
                     </div>
 
                          {/* right div  */}

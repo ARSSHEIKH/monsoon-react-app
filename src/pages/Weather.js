@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import DateTime from "../Components/DateTime";
 import { IoIosCloud } from 'react-icons/io';
 import { GiHeatHaze } from 'react-icons/gi';
-import "../css/weather.css"
-import "dotenv/config";
-const apiKey = process.env.WEATHER_API;
+import "../css/weather.css";
+import WEATHER_API from "../env"
 
 document.title = "MONsoon | Weather Updates";
 export default function Weather() {
+    const apiKey = WEATHER_API;
     const [searchText, setSearchText] = useState("");
     const [city_name, setCity_name] = useState("Get Output Here");
     const [tempVal, setTempVal] = useState(0);

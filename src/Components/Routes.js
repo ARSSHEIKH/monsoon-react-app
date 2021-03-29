@@ -3,8 +3,8 @@ import {BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 import Home from "../pages/Home";
-import About from "../pages/About";
-import Weather from "../pages/Weather";
+import About from "../pages/about";
+import Weather from "../pages/weather";
 
 export default function RoutesConfig(){
     return(
